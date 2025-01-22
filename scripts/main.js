@@ -1,16 +1,16 @@
 // main.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Add event listeners or interactive features here
-
-    // Example: Smooth scrolling for anchor links
+    // Select all internal page links (links starting with #)
     const links = document.querySelectorAll('a[href^="#"]');
+    
+    // Add click handler to each link
     links.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({ behavior: 'smooth' });
+            e.preventDefault();  // Stop default jump behavior
+            const targetId = this.getAttribute('href');  // Get target section ID
+            const targetElement = document.querySelector(targetId);  // Find target element
+            targetElement.scrollIntoView({ behavior: 'smooth' });  // Smooth scroll
         });
     });
 });
