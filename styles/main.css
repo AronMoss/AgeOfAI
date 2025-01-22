@@ -31,8 +31,8 @@ p {
     overflow: hidden;
 }
 
-/* footer {
-    background: #35424a;
+ /* footer {
+   background: #35424a;
     color: #ccccff;
     text-align: center;
     padding: 10px 0;
@@ -219,17 +219,17 @@ blockquote {
 
 blockquote::before, blockquote::after {
     font-size: 2rem;
-    color: #b624e7;
+    color: #4524e7;
 }
 
 blockquote footer {
     margin-top: 1rem;
     font-size: 1rem;
-    color: #9d69d8;
+    color: #c5bfcd;
 }
 
 .impact-section h2 {
-    color: #7720d9;
+    color: #ccc2d8;
 }
 .impact-section p {
     padding-left: 1rem;
